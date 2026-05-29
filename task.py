@@ -11,8 +11,10 @@ def rango_matrice(m: list) -> int:
         return int(np.linalg.matrix_rank(matrice))
 
 def risolvi_sistema_lineare(A: list, b: list) -> np.ndarray:
-    """Sub-task 3: Risolvere un Sistema Lineare."""
-    pass
+    A = np.array(A)
+    b = np.array(b)
+    return np.linalg.solve(A, b)
+
 
 def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
     """Sub-task 4: Correlazione tra Matrici 2x2."""
@@ -21,6 +23,8 @@ def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
 def operazioni_elemento_per_elemento(v1: list) -> tuple:
     """Sub-task 5: Restituisce (seno, coseno, arcoseno, arcocoseno) elemento per elemento calcolati sul primo array."""
     pass
+
+
 
 
 def main():
