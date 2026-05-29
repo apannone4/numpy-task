@@ -28,8 +28,14 @@ def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
 
 def operazioni_elemento_per_elemento(v1: list) -> tuple:
 
+        arr = np.array(v1)
 
+        seno = np.sin(arr)
+        coseno = np.cos(arr)
+        arcseno = np.arcsin(arr)
+        arccoseno = np.arccos(arr)
 
+        return seno, coseno, arcseno, arccoseno
 
 
 
